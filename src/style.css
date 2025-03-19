@@ -78,6 +78,7 @@ body {
     width: 100%;
     object-fit: contain;
     object-position: center bottom;
+    animation: floating 6s infinite;
 }
 
 .cover-bg {
@@ -145,4 +146,64 @@ body {
     background-color: orangered;
     transition: all ease-out 0.5s;
     color: #ffffff;
+}
+
+#about {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-gap: 50px;
+    align-items: center;
+}
+
+.about-img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    animation: floating 6s infinite reverse;
+}
+
+.about-img-height {
+    width: 500px;
+    height: 500px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-text h2 {
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Metal Mania';
+}
+
+.about-text {
+    color: #e2d9ec;
+    margin: 15px 0px;
+    font-size: 1.1rem;
+}
+
+.about-text a {
+    color: #ffffff;
+    width: 100%;
+    max-width: 180px;
+    border-radius: 30px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7471f;
+    margin-top: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all ease 0.3s;
+}
+
+.about-text a:hover {
+    transform: scale(1.1);
 }
