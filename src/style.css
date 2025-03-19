@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #2a1e31;
+    background-image: url(./img/bg-3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #dadada;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main-bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+}
+
+.cover-bg {
+    height: 100vh;
+    object-fit: cover;  
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.main-text {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-text h1 {
+    font-size: 6rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Metal Mania';
+}
+
+.main-text {
+    color: #e2d9ec;
+    font-size: 24px;
+    max-width: 630px;
+    margin: 10px 0;
+}
+
+.main-text a {
+    width: 100%;
+    max-width: 210px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 600;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+
+.main-text a:hover {
+    background-color: orangered;
+    transition: all ease-out 0.5s;
+    color: #ffffff;
+}
