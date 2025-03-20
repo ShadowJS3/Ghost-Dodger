@@ -5,6 +5,10 @@
     font-family: poppins;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     background-color: #2a1e31;
