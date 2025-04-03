@@ -360,5 +360,69 @@ footer {
 .footer-contact span {
     color: #e2d9ec;
     margin-bottom: 5px;
+}
 
+#contact {
+    background-color: transparent;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-heading h3 {
+    font-weight: 500;
+    font-family: 'Metal Mania';
+    font-size: 40px;
+    color: #e2d9ec;
+}
+
+.contact-heading p {
+    color: #ffffff;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+input, textarea {
+    background: linear-gradient(135deg, #5A3E69, #7D4E9F);
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: linear-gradient(135deg, #7D4E9F, #5A3E69);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #9B5DC6, #6D3F82);
+    transform: scale(1.05);
 }
