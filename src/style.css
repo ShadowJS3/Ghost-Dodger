@@ -71,11 +71,13 @@ body {
     object-fit: contain;
     object-position: center bottom;
     animation: floating 6s infinite;
+    will-change: transform;
 }
 
 .cover-bg {
     height: 100vh;
     object-fit: cover;  
+    will-change: transform;
 }
 
 @keyframes floating {
@@ -554,5 +556,26 @@ button:hover {
     .about-text a {
         margin: 20px auto 0;
         display: inline-block;
+    }
+}
+
+/* Suporte para modo escuro */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1324;
+        color: #e2d9ec;
+    }
+
+    .navbar a {
+        color: #ffffff;
+    }
+
+    .about-text a {
+        background-color: #bf82bf;
+        color: #ffffff;
+    }
+
+    .about-text a:hover {
+        background-color: #9b5dc6;
     }
 }
