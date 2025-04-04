@@ -196,6 +196,7 @@ body {
     font-weight: 700;
     letter-spacing: 1px;
     transition: all ease 0.3s;
+    text-align: center;
 }
 
 .about-text a:hover {
@@ -427,4 +428,131 @@ button {
 button:hover {
     background: linear-gradient(135deg, #9B5DC6, #6D3F82);
     transform: scale(1.05);
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 50px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .main-text h1 {
+        font-size: 4rem;
+    }
+
+    .main-text {
+        font-size: 20px;
+    }
+
+    .about-text h2 {
+        font-size: 3rem;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .about-img {
+        margin-bottom: 20px;
+    }
+
+    .about-img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+
+    .about-text a {
+        margin: 20px auto 0;
+        display: inline-block;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .main-text h1 {
+        font-size: 3rem;
+    }
+
+    .main-text {
+        font-size: 18px;
+    }
+
+    .about-img-height {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-box {
+        max-width: 100%;
+    }
+
+    #about {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .about-img {
+        margin-bottom: 20px;
+    }
+
+    .about-img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-text {
+        font-size: 0.9rem;
+        margin: 10px 0;
+    }
+
+    .about-text a {
+        margin: 20px auto 0;
+        display: inline-block;
+    }
 }
