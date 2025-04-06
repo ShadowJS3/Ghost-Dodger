@@ -436,7 +436,6 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Estilos específicos para a página do jogo */
 #game {
     display: flex;
     flex-direction: column;
@@ -476,7 +475,6 @@ button:hover {
     border: none;
 }
 
-/* Layout do jogo e tutorial */
 .game-layout {
     display: flex;
     justify-content: center;
